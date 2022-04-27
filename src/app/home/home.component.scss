@@ -1,0 +1,12 @@
+.cart {
+    img {
+        width: 54px;
+        height: 37.97px;
+    }
+}
+
+.images {
+    img:not(.last-image) {
+        padding-right: 35px;
+    }
+}

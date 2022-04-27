@@ -1,0 +1,57 @@
+<main>
+    <div class="cart flex justify-content-end">
+        <img src="/assets/icons/cart.svg" alt="Carrito" />
+    </div>
+    <hr />
+    <header>
+        <section class="flex justify-content-between">
+            <h2>Samurai King Resting</h2>
+            <p-button label="ADD TO CART" styleClass="p-button-sm"></p-button>
+        </section>
+        <img src="/assets/images/portada.svg" alt="foto de portada">
+        <div class="flex justify-content-between">
+            <section class="w-6">
+                <h4>About the Samurai King Resting</h4>
+                <h5>Pets</h5>
+                <p>So how did the classical Latin become so incoherent? According to McClintock, a 15th century
+                    typesetter
+                    likely scrambled part of Cicero's De Finibus in order to provide placeholder text to mockup various
+                    fonts for a type specimen book.So how did the classical Latin become so incoherent? According to
+                    McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to
+                    provide
+                    placeholder</p>
+                <p>text to mockup various fonts for a type specimen book.So how did the classical Latin
+                    become so
+                    incoherent? According to McClintock.</p>
+            </section>
+            <section class="w-6 flex align-items-end flex-column">
+                <h3>People also buy</h3>
+                <div class="images flex flex-row">
+                    <img src="/assets/images/Rectangle.svg" alt="">
+                    <img src="/assets/images/Rectangle1.svg" alt="">
+                    <img src="/assets/images/Rectangle2.svg" alt="" class="last-image">
+                </div>
+                <div class="details text-right mt-4 mb-4">
+                    <h3>Details</h3>
+                    <p>Size: 1020 x 1020 pixel</p>
+                    <p>Size: 15 mb</p>
+                </div>
+            </section>
+        </div>
+        <hr />
+        <section>
+            <h2>Photography / <span>Premium Photos</span></h2>
+            <div class="products">
+
+                <div class="w-4">
+
+                </div>
+                <div class="w-8">
+                    <ng-container *ngFor="let product of products">
+                        <img [src]="product.image.src" alt="">
+                    </ng-container>
+                </div>
+            </div>
+        </section>
+    </header>
+</main>
