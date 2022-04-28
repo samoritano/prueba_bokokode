@@ -41,14 +41,28 @@
         <hr />
         <section>
             <h2>Photography / <span>Premium Photos</span></h2>
-            <div class="products">
-
-                <div class="w-4">
-
+            <div class="products flex flex-row">
+                <div class="w-3">
+                    <h4>Category</h4>
+                    <div *ngFor="let category of categories" class="field-checkbox">
+                        <p-checkbox name="group2" value="category" [value]="category.key" [(ngModel)]="selectedCategories" (click)="selectCategories()"></p-checkbox>
+                        <label [for]="category.name">{{category.name}}</label>
+                    </div>
+                    <hr />
+                    <h4>Price Range</h4>
+                    <div *ngFor="let price of prices" class="field-checkbox">
+                        <p-checkbox name="group3" value="price" [value]="price.name" [(ngModel)]="selectedPrices" (click)="selectPrices()"></p-checkbox>
+                        <label [for]="price.name">{{price.name}}</label>
+                    </div>
                 </div>
-                <div class="w-8">
+                <div class="w-9 flex flex-wrap">
                     <ng-container *ngFor="let product of products">
-                        <img [src]="product.image.src" alt="">
+                        <div class="card w-4">
+                            <img src="{{product.image.src}}" alt="{{product.image.alt}}">
+                            <p>{{product.category}}</p>
+                            <p>{{product.name}}</p>
+                            <p>{{product.price}}€</p>
+                        </div>
                     </ng-container>
                 </div>
             </div>
