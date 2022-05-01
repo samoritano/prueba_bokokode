@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import axios from 'axios';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -11,8 +12,8 @@ export class HomeService{
     private http: HttpClient
   ) { }
 
-  getProducts(){
-    return this.http.get(`${environment.url}/products`);
+  async getProducts(page: number){
+    return await axios.get(`${environment.url}/products?page=${page}`)
   }
 
 }

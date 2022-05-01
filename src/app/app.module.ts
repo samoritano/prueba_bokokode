@@ -9,6 +9,10 @@ import { HttpClientModule } from '@angular/common/http';
 import {ButtonModule} from 'primeng/button';
 import {CheckboxModule} from 'primeng/checkbox';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {BadgeModule} from 'primeng/badge';
+import {DialogModule} from 'primeng/dialog';
+import {PaginatorModule} from 'primeng/paginator';
 
 @NgModule({
   declarations: [
@@ -17,12 +21,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     ReactiveFormsModule,
+    BrowserAnimationsModule,
     FormsModule,
     ButtonModule,
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
-    CheckboxModule
+    CheckboxModule,
+    DialogModule,
+    BadgeModule,
+    PaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

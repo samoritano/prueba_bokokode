@@ -12,9 +12,45 @@
 }
 
 .card{
+    position: relative;
     padding: 10px;
+    width: 282px;
     img{
         height: 390px;
         width: 100%;
     }
 }
+
+.addToCart{
+    visibility: hidden;
+    color: white;
+    background: black;
+    position: absolute;
+    top: 355px;
+    height: 45px;
+    width: 262px;
+}
+.card:hover .addToCart{
+    visibility: visible;
+    cursor: pointer;
+}
+.productsInCart{
+
+    img{
+        width: 150px;
+    }
+}
+
+.bestseller{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    color: black;
+}
+
+:host ::ng-deep .p-dialog-top-right .p-dialog {
+    margin-top: 70px;
+    margin-right: 55px;
+}
+
