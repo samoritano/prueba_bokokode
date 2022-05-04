@@ -54,3 +54,15 @@
     margin-right: 55px;
 }
 
+/* ------------------ MEDIA QUERIES ----------------- */
+
+@media (min-width: 300px) and (max-width: 415px) { 
+    header{
+        img{
+            width: 380px;
+        }
+        h2{
+            text-align: center;
+        }
+    }
+}

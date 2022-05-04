@@ -1,3 +1,10 @@
 .box{
     padding: 2% 5%;
 }
+
+@media (min-width: 300px) and (max-width: 415px) { 
+    .box{
+        padding: 1%;
+        width: 415px;
+    }
+}
