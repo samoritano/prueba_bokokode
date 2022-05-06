@@ -13,7 +13,7 @@ export class HomeService{
   ) { }
 
   async getProducts(page: number){
-    return await axios.get(`${environment.url}/products?page=${page}`)
+    return await axios.post(`${environment.url}/products?page=${page}`)
   }
 
 }
